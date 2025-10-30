@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Prune Docker data') {
       steps {
-        sh 'docker volumes ls'
+        sh 'docker volume ls'
       }
     }
     stage('Start container') {
