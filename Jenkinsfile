@@ -12,7 +12,7 @@ pipeline {
         '''
       }
     }
-    stage('Prune Docker data') {
+    stage('list docker volume') {
       steps {
         sh 'docker volume ls'
       }
